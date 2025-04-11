@@ -109,7 +109,7 @@ The processor is modular and structured, with each Verilog component performing 
 ```bash 
  1. Clone the repository:
 
-git clone https://github.com/Akhil03112003/RISC-V-pipeline-processor.git
+git clone https://github.com/Akhil03112003/RISC-V-pipelined-processor
 cd riscv-pipeline-processor
 ```
 
