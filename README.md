@@ -152,10 +152,10 @@ Begin simulation and observe waveform outputs.
 | **MEM** | `DataMemory.v` | Executes memory operations (`LW`, `SW`) |
 | **WB**  | Write-back logic in `mem_wb.v` | Writes result back to the register file |
 
-📌 Between each stage, pipeline registers (`if_id.v`, `id_ex.v`, `ex_mem.v`, `mem_wb.v`) pass the relevant data forward.
+ Between each stage, pipeline registers (`if_id.v`, `id_ex.v`, `ex_mem.v`, `mem_wb.v`) pass the relevant data forward.
 
 
-✅ Final Flow Summary
+Final Flow Summary
 ```
 Assembly Code (code.asm)
      ↓
@@ -177,8 +177,8 @@ Waveform/Output Observation
 
 
 RISC-V-pipelined-processor/
-├── compiler.py                      # Python compiler to convert RISC-V assembly to hex
 ├── code.asm                         # Sample RISC-V assembly program
+├── compiler.py                      # Python compiler to convert RISC-V assembly to hex
 ├── program.hex                      # Generated machine code from compiler
 ├── PC.v                             # Program Counter module
 ├── InstructionMemory.v             # ROM for storing instructions
