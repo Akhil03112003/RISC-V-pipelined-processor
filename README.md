@@ -3,7 +3,7 @@
 This is a 5-stage pipelined RISC-V processor implemented in **Verilog**. It supports a wide range of ALU operations along with basic memory, branching, and jumping instructions. Developed as a part of my **3rd year theme-based project (B.Tech ECE '25)**, this work demonstrates my strong foundation and passion for **VLSI design** and **digital system architecture**.
 
 > **Batch:** 2022–2026  
-> **Branch:** B.Tech Electronics and Communication Engineering (ECE)  
+> **Branch:** B.E Electronics and Communication Engineering (ECE)  
 > **Project Year:** 3rd Year (Theme-Based Project)
 
 ---
@@ -172,12 +172,43 @@ Waveform/Output Observation
 ```
 
 
-##  Author
+##   Project Structure
+```
+
+
+RISC-V-pipelined-processor/
+├── compiler.py                      # Python compiler to convert RISC-V assembly to hex
+├── code.asm                         # Sample RISC-V assembly program
+├── program.hex                      # Generated machine code from compiler
+├── PC.v                             # Program Counter module
+├── InstructionMemory.v             # ROM for storing instructions
+├── DataMemory.v                    # RAM for load/store operations
+├── ControlUnit.v                   # Control signal generator
+├── instruction_decode.v            # Decoder for parsing instructions
+├── ALU.v                            # Arithmetic Logic Unit
+├── RegisterFile.v                  # 32-register file
+├── HazardDetectionUnit.v           # Detects and handles hazards
+├── ForwardingUnit.v                # Resolves hazards by forwarding
+├── if_id.v                         # Pipeline register between IF and ID stages
+├── id_ex.v                         # Pipeline register between ID and EX stages
+├── ex_mem.v                        # Pipeline register between EX and MEM stages
+├── mem_wb.v                        # Pipeline register between MEM and WB stages
+├── testbench.v                     # Testbench for simulation
+
+
+```
+
+
+
+## Author
 
 **Sunkanapelly Akhilesh**  
 B.Tech ECE, Batch 2022–2026  
 Passionate about **VLSI Design**, **Processor Architectures**, and **Digital Systems**.  
-🔗 [LinkedIn]([https://www.linkedin.com/in/your-link](https://www.linkedin.com/in/akhilesh-sunkanapelly-11a677320/)) | 📧 akhilesh03112003@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/akhilesh-sunkanapelly-11a677320/) | 📧 akhilesh03112003@gmail.com
+
+
+
 
 
 ```
